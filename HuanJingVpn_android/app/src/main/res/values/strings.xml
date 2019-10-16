@@ -1,0 +1,54 @@
+<resources>
+
+    <string name="app_name">HuanJing VPN</string>
+    <string name="no_internet">There is no internet connection available</string>
+
+    <!-- LoginActivity -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="save_pwd_setting">Save password</string>
+    <string name="auto_connect_setting">Auto-connect on Software launch</string>
+
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+
+    <!-- MainActivity -->
+    <string name="preferences">Preferences</string>
+    <string name="logout">Logout</string>
+    <string name="open_logs">Open logs</string>
+
+    <!-- VPN Fragment -->
+    <string name="vpn_connected_header">Connected</string>
+    <string name="vpn_disconnected_header">Disconnected</string>
+    <string name="ip_address">IP Address</string>
+    <string name="location">Location</string>
+    <string name="expired_date">Expired:</string>
+	<string name="inspeed">Receive Bytes:</string>
+    <string name="outspeed">Send Bytes:</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnecting">Disconnecting</string>
+    <string name="reboot_title">Restart required</string>
+    <string name="status_lbl">Status</string>
+    <string name="elapsedLbl">Elapsed Time:</string>
+    <string name="reboot_message">Shenye VPN was not able to connect to Android\'s VPN service. Please restart your device to resolve this issue.</string>
+    <string name="no_server_selected">No server selected</string>
+    <!-- PreferencesActivity -->
+    <string name="behaviour">Behaviour</string>
+    <string name="connection">Connection</string>
+    <string name="reconnect_reboot">Reconnect on restart</string>
+    <string name="reconnect_reboot_summary">Shenye VPN will reconnect if it was active on system restart/shutdown.</string>
+    <string name="press_logout">Press to logout</string>
+    <string name="account">Account</string>
+    <string name="killswitch">Enable killswitch</string>
+    <string name="killswitch_summary">The kill-switch will stop your internet if the connection fails</string>
+    <string name="smartdns">Enable Smart DNS</string>
+    <string name="smartdns_summary">Get access to Netflix, Hulu, Pandora and other services while being connected to any server</string>
+    <string name="not_used_firewal">Note: not used when firewall option is enabled</string>
+    <string name="cipher">Encryption cipher</string>
+
+    <!-- LogActivity -->
+    <string name="logs">Logs</string>
+
+</resources>

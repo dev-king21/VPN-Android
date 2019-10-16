@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">深夜 VPN</string>
+    <string name="no_internet">There is no internet connection available</string>
+
+    <!-- LoginActivity -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Sign in</string>
+    <string name="signup">Sign up</string>
+
+    <!-- MainActivity -->
+    <string name="logout">Sign out</string>
+
+    <!-- VPN Fragment -->
+    <string name="vpn_connected_header">You are connected</string>
+    <string name="ip_address">IP Addr:</string>
+    <string name="location">Location:</string>
+    <string name="expired_date">Expired:</string>
+	<string name="inspeed">Incoming:</string>
+    <string name="outspeed">Outcoming:</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnecting">Disconnecting</string>
+    <string name="reboot_title">Restart required</string>
+    <string name="reboot_message">Shenye VPN was not able to connect to Android\'s VPN service. Please restart your device to resolve this issue.</string>
+    <string name="no_server_selected">No server selected</string>
+
+    <!-- LogActivity -->
+
+</resources>

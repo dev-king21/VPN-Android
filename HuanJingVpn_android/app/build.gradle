@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'app'
+            keyPassword 'wjfeoqlalf1912'
+            storeFile file('E:/Deployement/VPN/deploy_20190611/shenyeymz.keystore')
+            storePassword 'wjfeoqlalf1912'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "huanjing.vpn.android.app"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 20
+        versionName "2.3.2"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            signingConfig signingConfigs.config
+        }
+
+        debug {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+ext {
+    supportLibVersion = "28.0.0"
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:support-v13:${supportLibVersion}"
+    implementation "com.android.support:appcompat-v7:${supportLibVersion}"
+    implementation "com.android.support:cardview-v7:${supportLibVersion}"
+    implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
+    implementation "com.android.support:design:${supportLibVersion}"
+    implementation "com.android.support:support-annotations:${supportLibVersion}"
+    implementation 'com.github.johnkil.android-robototextview:robototextview:4.0.0'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.2'
+    implementation 'com.squareup.retrofit:retrofit:1.9.0'
+    implementation 'com.jakewharton.timber:timber:3.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    //implementation 'junit:junit:4.12'
+}

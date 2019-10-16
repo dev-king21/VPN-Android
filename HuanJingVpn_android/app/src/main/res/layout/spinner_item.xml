@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+    <ImageView
+        android:id="@+id/flag_server"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        />
+    <TextView
+        android:id="@+id/location_server"
+        android:singleLine="true"
+        style="@style/Theme.VPNht.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/primary" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">深夜 VPN</string>
+    <string name="no_internet">没有互联网连接</string>
+
+    <!-- LoginActivity -->
+    <string name="username">用户名</string>
+    <string name="password">密 码</string>
+    <string name="login">登  入</string>
+    <string name="signup">注  册</string>
+
+    <!-- MainActivity -->
+    <string name="logout">登出</string>
+
+    <!-- VPN Fragment -->
+    <string name="vpn_connected_header">你已经被联系了</string>
+    <string name="ip_address">I P:</string>
+    <string name="expired_date">过期:</string>
+    <string name="location">地点:</string>
+    <string name="inspeed">发送状态:</string>
+    <string name="outspeed">收到状态:</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开连接</string>
+    <string name="disconnecting">断开</string>
+    <string name="reboot_title">需要重启</string>
+    <string name="reboot_message">深夜VPN无法连接到Android的VPN服务。请重新启动您的设备以解决此问题。</string>
+    <string name="no_server_selected">没有选择服务器</string>
+
+    <!-- LogActivity -->
+
+</resources>

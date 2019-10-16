@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="activity_top_margin">-20dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_small_margin">4dp</dimen>
+
+    <!-- Login dimens -->
+    <dimen name="login_horizontal_margin">50dp</dimen>
+    <dimen name="login_button_margin">10dp</dimen>
+    <dimen name="button_size">56dp</dimen>
+    <dimen name="status_row">40dp</dimen>
+
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_elevation">1dp</dimen>
+    <dimen name="card_corner">2dp</dimen>
+    <dimen name="card_item_distance">8dp</dimen>
+</resources>

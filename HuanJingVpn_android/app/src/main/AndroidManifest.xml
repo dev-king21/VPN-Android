@@ -1,0 +1,104 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="huanjing.vpn.android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name="huanjing.vpn.android.VPNhtApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.VPNht"
+        >
+
+        <activity
+            android:name="huanjing.vpn.android.activities.SplashActivity"
+            android:theme="@style/Theme.VPNht.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="huanjing.vpn.android.activities.MainActivity"
+            android:theme="@style/Theme.VPNht.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="huanjing.vpn.android.activities.LoginActivity"
+            android:theme="@style/Theme.VPNht.Login"
+            />
+        <activity android:name="huanjing.vpn.android.activities.PreferencesActivity" />
+        <activity android:name="huanjing.vpn.android.activities.LogActivity" />
+
+        <activity android:name="huanjing.vpn.android.activities.GrantPermissionsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="huanjing.vpn.android.activities.ConfirmAPIActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="huanjing.vpn.android.LaunchVPN"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:label="@string/vpn_launch_title"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Panel"
+            tools:ignore="ExportedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="huanjing.vpn.android.activities.DisconnectVPN"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+
+        <service
+            android:name="hu.blint.ssldroid.TcpProxyServerService">
+        </service>
+
+        <service
+            android:name="de.blinkt.openvpn.core.OpenVPNService"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="huanjing.vpn.android.api.ExternalOpenVPNService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="ht.vpn.android.api.IOpenVPNAPIService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="huanjing.vpn.android.OnBootReceiver" android:enabled="true" android:exported="true">
+             <intent-filter android:priority="999">
+                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+             </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

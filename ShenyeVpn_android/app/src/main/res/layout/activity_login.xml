@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app"
+        app:srcCompat="@drawable/header" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/usernameInputLayout"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/login_horizontal_margin"
+        android:layout_marginRight="@dimen/login_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_top_margin">
+        <com.devspark.robototextview.widget.RobotoEditText
+            android:id="@+id/usernameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="@string/username"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_below="@id/usernameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/login_horizontal_margin"
+        android:layout_marginRight="@dimen/login_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_small_margin">
+        <com.devspark.robototextview.widget.RobotoEditText
+            android:id="@+id/passwordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <com.devspark.robototextview.widget.RobotoButton
+        android:id="@+id/loginButton"
+        android:layout_below="@id/passwordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/login_horizontal_margin"
+        android:layout_marginRight="@dimen/login_horizontal_margin"
+        android:layout_marginTop="@dimen/login_button_margin"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text="@string/login"
+        android:theme="@style/Theme.VPNht.PrimaryButton" />
+
+    <com.devspark.robototextview.widget.RobotoButton
+        android:id="@+id/registerButton"
+        android:layout_below="@id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/login_horizontal_margin"
+        android:layout_marginRight="@dimen/login_horizontal_margin"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:text="@string/signup"
+        android:theme="@style/Theme.VPNht.SecondaryButton" />
+
+    <TextView
+        android:id="@+id/versionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/header"
+        android:layout_alignRight="@+id/header"
+        android:layout_alignBottom="@+id/header"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/primary"
+        android:text="" />
+
+
+</RelativeLayout>

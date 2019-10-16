@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+
+    <ImageView
+        android:id="@+id/flag_server"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/flag_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location_server"
+        style="@style/Theme.VPNht.Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        android:singleLine="true"
+        android:text="1000ms"
+        android:textColor="@color/primary"
+        app:layout_constraintBottom_toBottomOf="@+id/flag_server"
+        app:layout_constraintStart_toEndOf="@+id/flag_server"
+        />
+
+    <TextView
+        android:id="@+id/pingtime_server"
+        style="@style/Theme.VPNht.Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        android:singleLine="true"
+        android:text="1000ms"
+        android:textColor="@color/primary"
+        app:layout_constraintBottom_toBottomOf="@+id/flag_server"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

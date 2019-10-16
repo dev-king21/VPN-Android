@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.VPNht" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/secondary</item>
+        <item name="colorControlNormal">@color/background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="spinnerStyle">@style/Base.Widget.AppCompat.Spinner</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="Theme.VPNht.Login" parent="Theme.VPNht">
+        <item name="colorPrimary">@color/secondary</item>
+        <item name="colorPrimaryDark">@color/secondary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="colorControlNormal">@color/controls</item>
+        <item name="android:windowBackground">@color/main_background</item>
+    </style>
+
+    <style name="Theme.VPNht.SecondaryButton" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/background</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Theme.VPNht.StopButton" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/red</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Theme.VPNht.PrimaryButton" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/primary</item>
+    </style>
+
+    <style name="Theme.VPNht.Spinner" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+</resources>
